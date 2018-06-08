@@ -11,7 +11,7 @@ def mutate_param(r, param):
     return r
 
 
-def mutate_param(reprs):
+def mutate_random_param(reprs):
     # Find indices of layers with mutable params
     idxs = []
     for i in range(len(reprs)):
