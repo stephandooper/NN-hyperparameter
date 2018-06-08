@@ -7,6 +7,9 @@ from deap import base
 from deap import creator
 from deap import tools
 
+import representations
+
+
 
 # Create attributes
 creator.create("FitnessMax", base.Fitness, weights=(1.0,))
@@ -29,17 +32,43 @@ def getRandomBlock(blockType=None, nodeLength=None):
     return (blockType, nodeLength)
 
 
+def getRandomIndividual(iterations=3):
+    #Possible networks to choose from:
+    networks = [
+        [representations.make_conv2d_repr(),
+        representations.make_pool_repr()],
+
+        [representations.make_dropout_repr(),
+        representations.make_conv2d_repr()],
+
+        [representations.make_batchnorm_repr()],
+
+        [representations.make_noise_repr()]
+    ]
+
+    probabilities = [0.3, 0.3, 0.25, 0.15]
+
+
+    out = []
+
+    for x in range(0,iterations):
+        choice = numpy.random.choice(networks, p=probabilities)
+        for layer in choice:
+            out.append(layer)
+
+    return out
 
 # Container for populations:
 
 toolbox = base.Toolbox()
 # Attribute generator (happens randomly at each creation)
-toolbox.register("nnelem", getRandomBlock)
+#toolbox.register("nnelem", getRandomReprFunc)
 # Structure initializers
 
 creator.create("NNCreator", numpy.ndarray, fitness=creator.FitnessMax)
 
-toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.nnelem, 3) #<-- Creates 3 elements
+toolbox.register("individual", getRandomIndividual) #<-- Creates 3 elements
+#toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.nnelem, 3) #<-- Creates 3 elements
 #toolbox.register("individual", tools.initRepeat, list, toolbox.nnelem, 3) #<-- Creates 3 elements
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
@@ -65,7 +94,7 @@ toolbox.register("select", tools.selTournament, tournsize=3)
 
 def main():
     random.seed(1337)
-    pop = toolbox.population(n=300)
+    pop = toolbox.population(n=10)
     hof = tools.HallOfFame(1)
     stats = tools.Statistics(lambda ind: ind.fitness.values)
     stats.register("avg", numpy.mean)
