@@ -10,7 +10,7 @@ from deap import tools
 
 # Create attributes
 creator.create("FitnessMax", base.Fitness, weights=(1.0,))
-creator.create("Individual", array.array, typecode='b', fitness=creator.FitnessMax)
+creator.create("Individual", numpy.ndarray, fitness=creator.FitnessMax)
 
 
 BLOCK_TYPES = ['dense', 'conv']
@@ -34,14 +34,16 @@ def getRandomBlock(blockType=None, nodeLength=None):
 
 toolbox = base.Toolbox()
 # Attribute generator (happens randomly at each creation)
-toolbox.register("nn-element", getRandomBlock)
+toolbox.register("nnelem", getRandomBlock)
 # Structure initializers
-toolbox.register("individual", tools.initRepeat, creator.Individual, 
-    toolbox.nn-element, 3) #<-- Creates 3 elements
+
+creator.create("NNCreator", numpy.ndarray, fitness=creator.FitnessMax)
+
+toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.nnelem, 3) #<-- Creates 3 elements
+#toolbox.register("individual", tools.initRepeat, list, toolbox.nnelem, 3) #<-- Creates 3 elements
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
-
-
+# ---------------- Up till here it should work just fine
 
 
 '''
