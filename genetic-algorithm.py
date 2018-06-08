@@ -7,41 +7,38 @@ from deap import base
 from deap import creator
 from deap import tools
 
+
 # Create attributes
 creator.create("FitnessMax", base.Fitness, weights=(1.0,))
 creator.create("Individual", array.array, typecode='b', fitness=creator.FitnessMax)
 
 
+BLOCK_TYPES = ['dense', 'conv']
+NODE_SIZES = [16, 32, 64, 28, 12, 10, 86, 100]
 
-elements = [] # TODO
-
-'''
-TODO:
-
-Create list of elements where it randomly fills the possible blocks with integers:
-ex:
-dense, 32
-dense, 16
-dense, 64
-conv, 16
-conv, 64
-
-so basically random: (type, integer)
 
 '''
+Returns random block elements.
+'''
+def getRandomBlock(blockType=None, nodeLength=None):
+    if blockType is None:
+        blockType = random.choice(BLOCK_TYPES)
+    if nodeLength is None:
+        nodeLength = random.choice(NODE_SIZES)
+
+    return (blockType, nodeLength)
+
 
 
 # Container for populations:
 
 toolbox = base.Toolbox()
 # Attribute generator (happens randomly at each creation)
-toolbox.register("nn-element", random.choice, elements.keys())
+toolbox.register("nn-element", getRandomBlock)
 # Structure initializers
 toolbox.register("individual", tools.initRepeat, creator.Individual, 
     toolbox.nn-element, 3) #<-- Creates 3 elements
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
-
-
 
 
 
