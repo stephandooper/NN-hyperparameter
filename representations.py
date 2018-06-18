@@ -76,6 +76,7 @@ def make_conv2d_pool_repr():
 REPR_MAKERS = {
     'batchnorm': make_batchnorm_repr,
     'conv2d': make_conv2d_repr,
+    'conv2ddropout': make_conv2d_dropout_repr,
     'dropout': make_dropout_repr,
     'noise': make_noise_repr,
     'pool': make_pool_repr,
@@ -93,6 +94,7 @@ MUTABLE_PARAMS = {
 INSERTABLE = [
     'batchnorm',
     'conv2d',
+    'conv2ddropout',
     'dropout',
     'noise',
     'pool',
