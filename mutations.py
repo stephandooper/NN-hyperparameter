@@ -19,6 +19,7 @@ def mutate_filter(r, param):
 
 def mutate_droprate(r,param):
     '''
+    @Deprecated
     My niggas, this is the function that edits dropout rates
     This shit is so heavy no kush will make this light y'all
     
@@ -31,7 +32,7 @@ def mutate_droprate(r,param):
     
 
 def mutate_random_param(reprs):
-    
+    #@Deprecated
     '''
     main function to the mutate random parameters for a representation  reprs
     
@@ -56,7 +57,20 @@ def mutate_random_param(reprs):
 
 def insert_layer(reprs):
     # TODO: implement
-    pass
+    return reprs
+
+def mutate_append_remove(reprs, prob_remove=1):
+    '''
+    Randomly appends or removes a layer. 
+        prob_remove: probability that it removes a layer
+    Returns: mutated representation
+    '''
+    if np.random.random() < prob_remove:
+        if len(reprs) > 0:
+            reprs.remove(np.random.choice(reprs))
+    else:
+        reprs = insert_layer(reprs)
+    return reprs
 
 
 def main():

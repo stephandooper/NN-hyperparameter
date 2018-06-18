@@ -122,7 +122,7 @@ def reprs2nn(reprs):
         if r['type'] == 'conv2ddropout':
             x = repr2layer({'type': 'conv2d', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_conv2d_repr()['params'].keys()}})(x)
             x = repr2layer({'type': 'dropout', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_dropout_repr()['params'].keys()}})(x)
-        if r['type'] == 'conv2dpool':
+        elif r['type'] == 'conv2dpool':
             x = repr2layer({'type': 'conv2d', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_conv2d_repr()['params'].keys()}})(x)
             x = repr2layer({'type': 'pool', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_pool_repr()['params'].keys()}})(x)
         else:
@@ -140,4 +140,4 @@ def default_init_nn_repr():
     ]
     return layers
 
-print(reprs2nn(default_init_nn_repr()).summary())
+#print(reprs2nn(default_init_nn_repr()).summary())
