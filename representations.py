@@ -59,6 +59,14 @@ def make_pool_repr():
     return layer
 
 
+def make_conv2d_dropout_repr():
+    layer = make_conv2d_repr()
+    layer['type'] = 'conv2ddropout'
+    layer['params']['rate'] = np.around(np.random.uniform(low=.1, high=.5),
+                                        decimals=2)
+    return layer
+
+
 REPR_MAKERS = {
     'batchnorm': make_batchnorm_repr,
     'conv2d': make_conv2d_repr,
@@ -101,7 +109,11 @@ def reprs2nn(reprs):
     inputs = Input(shape=(28, 28, 1))
     x = inputs
     for r in reprs:
-        x = repr2layer(r)(x)
+        if r['type'] == 'conv2ddropout':
+            x = repr2layer({'type': 'conv2d', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_conv2d_repr()['params'].keys()}})(x)
+            x = repr2layer({'type': 'dropout', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_dropout_repr()['params'].keys()}})(x)
+        else:
+            x = repr2layer(r)(x)
     x = Flatten()(x)
     outputs = Dense(10, activation='softmax')(x)
     return Model(inputs, outputs)
@@ -110,6 +122,8 @@ def reprs2nn(reprs):
 def default_init_nn_repr():
     layers = [
         make_conv2d_repr(),
-        make_conv2d_repr(),
+        make_conv2d_dropout_repr(),
     ]
     return layers
+
+print(reprs2nn(default_init_nn_repr()).summary())
