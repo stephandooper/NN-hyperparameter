@@ -1,6 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#Delete keras, default_init_nn_repr
+
+
+
+'''
+MAKE SURE TO RETURN TYPE 'Individual' (toolbox.individual())
+
+It is safe to mutate droprates/pooling stuff, etc. But inserting/removing seems impossible?
+(Type 'Individual' has no function 'remove'/'append')
+'''
+
+
 
 
 from representations import INSERTABLE, MUTABLE_PARAMS, default_init_nn_repr
