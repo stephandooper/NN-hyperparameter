@@ -55,7 +55,7 @@ def make_noise_repr():
 def make_pool_repr():
     layer = make_base_repr()
     layer['type'] = 'pool'
-    layer['params']['pool_size'] = 2
+    layer['params']['pool_size'] = np.random.randint(1,5)
     return layer
 
 
@@ -66,6 +66,12 @@ def make_conv2d_dropout_repr():
                                         decimals=2)
     return layer
 
+def make_conv2d_pool_repr():
+    layer = make_conv2d_repr()
+    layer['type'] = 'conv2dpool'
+    layer['params']['pool_size'] = np.random.randint(1,5) # random between 1 - 4 inclusive 
+
+    return layer
 
 REPR_MAKERS = {
     'batchnorm': make_batchnorm_repr,
@@ -98,6 +104,8 @@ REPR2LAYER = {
     'dropout': Dropout,
     'noise': GaussianNoise,
     'pool': MaxPooling2D,
+
+
 }
 
 
@@ -112,6 +120,9 @@ def reprs2nn(reprs):
         if r['type'] == 'conv2ddropout':
             x = repr2layer({'type': 'conv2d', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_conv2d_repr()['params'].keys()}})(x)
             x = repr2layer({'type': 'dropout', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_dropout_repr()['params'].keys()}})(x)
+        if r['type'] == 'conv2dpool':
+            x = repr2layer({'type': 'conv2d', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_conv2d_repr()['params'].keys()}})(x)
+            x = repr2layer({'type': 'pool', 'params': {x[0]: x[1] for x in r['params'].items() if x[0] in make_pool_repr()['params'].keys()}})(x)
         else:
             x = repr2layer(r)(x)
     x = Flatten()(x)
@@ -119,10 +130,11 @@ def reprs2nn(reprs):
     return Model(inputs, outputs)
 
 
+
 def default_init_nn_repr():
     layers = [
         make_conv2d_repr(),
-        make_conv2d_dropout_repr(),
+        make_conv2d_dropout_repr()
     ]
     return layers
 
