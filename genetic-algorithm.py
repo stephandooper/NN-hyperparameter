@@ -10,6 +10,15 @@ from deap import tools
 import representations, fitness
 
 
+INITIAL_BLOCKS = 3 # Represents how many random layer blocks each NNet should start with
+POPULATION = 3
+GENERATIONS = 2
+PROB_MUTATIONS = 0.0 # Probability of mutating in a new generation
+PROB_MATE = 0.5 # Probability of mating / crossover in a new generation
+NUMBER_EPOCHS = 2 #Epochs when training the network
+
+#---------------------
+
 def getRandomIndividual(iterations=1):
     #Possible networks to choose from:
     '''
@@ -53,7 +62,7 @@ def getRandomIndividual(iterations=1):
 Evaluation function (should return the fitness)
 '''
 def evaluateFunc(individual):
-    return fitness.evaluate_nn(individual), #<--- IMPORTANT: add the comma ','; as it needs to return a tuple
+    return fitness.evaluate_nn(individual, NUMBER_EPOCHS), #<--- IMPORTANT: add the comma ','; as it needs to return a tuple
 
 
 # -------------- Init / Main stuff ----------------------
@@ -64,10 +73,12 @@ creator.create("Individual", numpy.ndarray,  fitness=creator.FitnessMax)
 
 toolbox = base.Toolbox()
 
-toolbox.register("individual", tools.initRepeat, creator.Individual, getRandomIndividual, n=3) #<-- Creates 3 elements
+toolbox.register("individual", tools.initRepeat, creator.Individual, getRandomIndividual, n=INITIAL_BLOCKS) #<-- Creates 3 elements
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
+
+
 toolbox.register("evaluate", evaluateFunc) #register the evaluation function
-#toolbox.register("mate", tools.cxTwoPoint)
+toolbox.register("mate", tools.cxTwoPoint)
 #toolbox.register("mutate", mutations.mutate_append_remove, prob_remove=1)
 toolbox.register("select", tools.selTournament, tournsize=3)
 #toolbox.register("select", tools.selBest)
@@ -77,7 +88,7 @@ toolbox.register("select", tools.selTournament, tournsize=3)
 
 def main():
     random.seed(1337)
-    pop = toolbox.population(n=10)
+    pop = toolbox.population(n=POPULATION)
 
     # Evaluate the entire population
     fitnesses = list(map(toolbox.evaluate, pop))
@@ -93,9 +104,14 @@ def main():
     stats.register("min", numpy.min)
     stats.register("max", numpy.max)
     
-    pop, log = algorithms.eaSimple(pop, toolbox, cxpb=0.5, mutpb=0.2, ngen=5, stats=stats, halloffame=hof, verbose=True)
+    pop, log = algorithms.eaSimple(pop, toolbox, cxpb=PROB_MATE, mutpb=PROB_MUTATIONS, ngen=GENERATIONS, stats=stats, halloffame=hof, verbose=True)
 
-    print('log: ', log)
+    print("\n----------------------------------")
+    print(log)
+    print("----------------------------------\n")
+    print("Best network:")
+    print(hof[0])
+    print("With a fitness of: ", hof[0].fitness)
 
 if __name__ == "__main__":
     main()

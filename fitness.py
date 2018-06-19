@@ -17,14 +17,14 @@ y_test = keras.utils.to_categorical(y_test, num_classes)
 
 
 #subset of data:
-x_train = x_train[:500]
-y_train = y_train[:500]
-x_test = x_test[:100]
-y_test = y_test[:100]
+x_train = x_train[:200]
+y_train = y_train[:200]
+x_test = x_test[:50]
+y_test = y_test[:50]
 
 
 
-def evaluate_nn(reprs):
+def evaluate_nn(reprs, epochs=5):
     fitness = 0
     try: 
         model = representations.reprs2nn(reprs)
@@ -47,7 +47,7 @@ def evaluate_nn_test(reprs):
 
     model.compile('adam', 'categorical_crossentropy', metrics=['accuracy'])
 
-    result = model.fit(x_train, y_train, batch_size=32, epochs=5,
+    result = model.fit(x_train, y_train, batch_size=32, epochs=3,
                        validation_data=(x_test, y_test), verbose=1)
     return max(result.history['val_acc'])
 
