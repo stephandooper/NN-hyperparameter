@@ -15,7 +15,7 @@ INITIAL_BLOCKS = 5 # Random Exclusive represents how many random layer blocks ea
 
 POPULATION = 10
 GENERATIONS = 10
-PROB_MUTATIONS = 0.45 # Probability of mutating in a new generation
+PROB_MUTATIONS = 0.25 # Probability of mutating in a new generation
 PROB_MATE = 0.6 # Probability of mating / crossover in a new generation
 NUMBER_EPOCHS = 2 #Epochs when training the network
 
@@ -90,7 +90,7 @@ toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
 
 toolbox.register("evaluate", evaluateFunc) #register the evaluation function
-toolbox.register("mate", tools.cxOnePoint)
+toolbox.register("mate", tools.cxTwoPoint)
 toolbox.register("mutate", mutations.mutate_layer, verbose=True)
 toolbox.register("select", tools.selTournament, tournsize=3)
 #toolbox.register("select", tools.selBest)
