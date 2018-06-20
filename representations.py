@@ -77,6 +77,7 @@ REPR_MAKERS = {
     'batchnorm': make_batchnorm_repr,
     'conv2d': make_conv2d_repr,
     'conv2ddropout': make_conv2d_dropout_repr,
+    'conv2dpool': make_conv2d_pool_repr,
     'dropout': make_dropout_repr,
     'noise': make_noise_repr,
     'pool': make_pool_repr,
