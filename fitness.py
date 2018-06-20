@@ -32,7 +32,7 @@ def evaluate_nn(reprs, epochs=5):
 
 
         result = model.fit(x_train, y_train, batch_size=32, epochs=2,
-                           validation_data=(x_test, y_test), verbose=1)
+                           validation_data=(x_test, y_test), verbose=0)
         fitness = max(result.history['val_acc'])
     except:
         print("Error evaluating..")
