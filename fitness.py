@@ -54,5 +54,3 @@ def evaluate_nn_test(reprs):
     result = model.fit(x_train, y_train, batch_size=32, epochs=3,
                        validation_data=(x_test, y_test), verbose=1)
     return max(result.history['val_acc'])
-
-
