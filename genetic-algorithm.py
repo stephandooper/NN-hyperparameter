@@ -21,7 +21,7 @@ NUMBER_EPOCHS = 2 #Epochs when training the network
 
 #---------------------
 
-def getRandomIndividual(iterations=1):
+def getRandomIndividual():
     #Possible networks to choose from:
     '''
     networks = [
@@ -82,6 +82,9 @@ def initRepeatRandom(container, func, n):
 # Create attributes
 creator.create("FitnessMax", base.Fitness, weights=(1.0,))
 creator.create("Individual", np.ndarray,  fitness=creator.FitnessMax)
+
+mutations.setIndividual(creator.Individual)
+
 
 toolbox = base.Toolbox()
 

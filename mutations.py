@@ -19,6 +19,8 @@ import random
 
 FILTER_MUTATIONS = np.array([16, 32, 64])
 
+containerIndividual = None
+
 
 def mutate_random_param(reprs):
     #@Deprecated
@@ -62,6 +64,21 @@ def mutate_append_remove(reprs, prob_remove=1):
     else:
         reprs = insert_layer(reprs)
     return reprs
+
+# -------------------------------------------------------
+
+
+
+def setIndividual(container):
+    '''
+    Sets the individual Object to the mutations global class.
+    In order to generate a representation of type 'Individual', you need to call the variable.
+    Example:
+        containerIndividual(array) --> Individual([block1], [block2], [block3])
+    '''
+    global containerIndividual
+    containerIndividual = container
+
 
 def mutate_layer(layer, verbose=False):
     '''
