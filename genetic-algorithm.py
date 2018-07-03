@@ -21,7 +21,7 @@ NUMBER_EPOCHS = 2 #Epochs when training the network
 
 #---------------------
 
-def getRandomIndividual():
+def getRandomLayer():
     #Possible networks to choose from:
     '''
     networks = [
@@ -84,17 +84,18 @@ creator.create("FitnessMax", base.Fitness, weights=(1.0,))
 creator.create("Individual", np.ndarray,  fitness=creator.FitnessMax)
 
 mutations.setIndividual(creator.Individual)
+mutations.setInitialization(getRandomLayer)
 
 
 toolbox = base.Toolbox()
 
-toolbox.register("individual", initRepeatRandom, creator.Individual, getRandomIndividual, n=INITIAL_BLOCKS) #<-- Creates 3 elements. This random, however does not evaluate the random function each time yet
+toolbox.register("individual", initRepeatRandom, creator.Individual, getRandomLayer, n=INITIAL_BLOCKS) #<-- Creates 3 elements. This random, however does not evaluate the random function each time yet
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
 
 toolbox.register("evaluate", evaluateFunc) #register the evaluation function
 toolbox.register("mate", tools.cxTwoPoint)
-toolbox.register("mutate", mutations.mutate_layer, verbose=True)
+toolbox.register("mutate", mutations.mutate_network, verbose=True, mutations=2)
 toolbox.register("select", tools.selTournament, tournsize=3)
 #toolbox.register("select", tools.selBest)
 #deap.tools.selBest(individuals, k, fit_attr='fitness')¶

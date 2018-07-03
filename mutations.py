@@ -14,42 +14,16 @@ It is safe to mutate droprates/pooling stuff, etc. But inserting/removing seems 
 
 
 from representations import INSERTABLE, MUTABLE_PARAMS, default_init_nn_repr, REPR_MAKERS
+import representations
 import numpy as np
 import random
 
 FILTER_MUTATIONS = np.array([16, 32, 64])
 
 containerIndividual = None
+getRandomLayer = None
 
 
-def mutate_random_param(reprs):
-    #@Deprecated
-    '''
-    main function to the mutate random parameters for a representation  reprs
-    
-    '''
-    # Find indices of layers with mutable params
-    idxs = []
-    for i in range(len(reprs)):
-        if reprs[i]['type'] in MUTABLE_PARAMS.keys():
-            idxs.append(i)
-    # Pick a random index
-    idx = np.random.choice(idxs)
-    # Pick a random param
-    param = np.random.choice(MUTABLE_PARAMS[reprs[idx]['type']])
-    print('param is equal to', param)
-    print('repr before is equal to',reprs[idx]['params'][param])
-    r = mutate_filter(reprs[idx], param)
-    
-    reprs[idx] = r
-    print('repr after is equal to',reprs[idx]['params'][param])
-    return reprs
-
-
-def insert_layer(reprs):
-    #@Deprecated
-    # TODO: implement
-    return reprs
 
 def mutate_append_remove(reprs, prob_remove=1):
     #@Deprecated
@@ -79,6 +53,10 @@ def setIndividual(container):
     global containerIndividual
     containerIndividual = container
 
+def setInitialization(func):
+    global getRandomLayer
+    getRandomLayer = func
+
 
 def mutate_layer(layer, verbose=False):
     '''
@@ -90,27 +68,52 @@ def mutate_layer(layer, verbose=False):
     class.    
     '''
     for elem in REPR_MAKERS:
-        if layer[0]['type'] == elem:
-            layer[0] = REPR_MAKERS[elem]()
+        if layer['type'] == elem:
+            layer = REPR_MAKERS[elem]()
             if verbose:
-                print('MUTATED LAYER %s' % layer[0]['type'])
-    return layer,
+                print('MUTATED LAYER %s' % layer['type'])
+    return layer
 
-def mutate_network(repr, mutations=1, verbose=False):
+
+def removeBlock(repr):
+    #@Deprecated
+    random.shuffle(repr)
+    return repr.pop()
+
+
+def mutate_network(reprRaw, mutations=2, verbose=False, appendProb = 0.5, removeProb = 0.5):
     '''
-    @Deprecated
     Mutates a whole representation network.
-    Apparently, the mutate function of deap does select a layer of itself to mutate, not a whole network.
+    Arguments:
+        appendProb: probability that a block is being appended/removed.
     '''
+    repr = reprRaw.tolist()
+
     if mutations > len(repr):
-        mutations = len(repr)-1 # prevents setting higher count of mutations than length of representation
+        mutations = len(repr) # prevents setting higher count of mutations than length of representation
+
 
     if verbose:
         print("MUTATING %d BLOCKS OF NETWORK" % mutations)
     
+    
+    #Mutating blocks itself:
     for layerIndex in np.random.randint(0, len(repr), mutations):
         if verbose:
             repr[layerIndex] = mutate_layer(repr[layerIndex], verbose=True)
         else:
             repr[layerIndex] = mutate_layer(repr[layerIndex])
-    return repr,
+
+    #Appending / removing blocks:
+    if np.random.random() < appendProb:
+        print("APPEND BLOCK ELEM: ", len(repr))
+        repr.append(getRandomLayer())
+        print("NEW BLOCK ELEM: ", len(repr))
+    elif np.random.random() < removeProb and len(repr) > 2:
+        print("REMOVE BLOCK ELEM: ", len(repr))
+        random.shuffle(repr)
+        repr.pop()
+        print("NEW BLOCK ELEM: ", len(repr))
+
+
+    return containerIndividual(repr),
