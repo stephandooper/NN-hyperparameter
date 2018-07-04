@@ -8,8 +8,6 @@ from deap import creator
 from deap import tools
 
 import representations, fitness, mutations
-import sys
-from pprint import pprint
 
 
 #INITIAL_BLOCKS = 5 # Represents how many random layer blocks each NNet should start with
@@ -107,9 +105,6 @@ def main():
     random.seed(1337)
 
     pop = toolbox.population(n=POPULATION)
-    pprint(pop)
-
-    sys.exit(1)
 
     # Evaluate the entire population
     fitnesses = list(map(toolbox.evaluate, pop))
