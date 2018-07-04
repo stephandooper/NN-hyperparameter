@@ -38,15 +38,15 @@ def getRandomLayer():
 
     probabilities = [0.3, 0.3, 0.25, 0.15]
 
-    
+
     out = []
 
-    
+
     for x in range(0,iterations):
         choice = np.random.choice(networks, p=probabilities)
         for layer in choice:
             out.append(layer)
-    
+
     return out
     '''
 
@@ -55,13 +55,13 @@ def getRandomLayer():
     networks = [
         representations.make_conv2d_pool_repr(),
         representations.make_conv2d_dropout_repr(),
-        representations.make_flatten_repr(),
+        # representations.make_flatten_repr(),
         representations.make_noise_repr(),
         representations.make_dropout_repr(),
 
     ]
-    probabilities = [0.3, 0.3, 0.10, 0.15, 0.15]
-    
+    probabilities = np.array([0.3, 0.3, 0.15, 0.15])
+    probabilities = probabilities / probabilities.sum()
     return np.random.choice(networks,p=probabilities)
 
 
@@ -120,7 +120,7 @@ def main():
     stats.register("std", np.std)
     stats.register("min", np.min)
     stats.register("max", np.max)
-    
+
     pop, log = algorithms.eaSimple(pop, toolbox, cxpb=PROB_MATE, mutpb=PROB_MUTATIONS, ngen=GENERATIONS, stats=stats, halloffame=hof, verbose=True)
 
     print("\n----------------------------------")
