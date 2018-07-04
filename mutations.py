@@ -81,11 +81,12 @@ def removeBlock(repr):
     return repr.pop()
 
 
-def mutate_network(reprRaw, mutations=2, verbose=False, appendProb = 0.5, removeProb = 0.5):
+def mutate_network(reprRaw, mutations=2, verbose=False, appendRemoveProb = 0.6):
     '''
     Mutates a whole representation network.
     Arguments:
-        appendProb: probability that a block is being appended/removed.
+        appendRemoveProb: Probability that a block is being appended/removed. 
+            The inverse is the probability of mutating a block itself (so not changing the structure)
     '''
     repr = reprRaw.tolist()
 
@@ -97,23 +98,30 @@ def mutate_network(reprRaw, mutations=2, verbose=False, appendProb = 0.5, remove
         print("MUTATING %d BLOCKS OF NETWORK" % mutations)
     
     
-    #Mutating blocks itself:
-    for layerIndex in np.random.randint(0, len(repr), mutations):
-        if verbose:
-            repr[layerIndex] = mutate_layer(repr[layerIndex], verbose=True)
-        else:
-            repr[layerIndex] = mutate_layer(repr[layerIndex])
+    
+    if (np.random.random() < appendRemoveProb): #if random evaluates to do an append/remove
 
-    #Appending / removing blocks:
-    if np.random.random() < appendProb:
-        print("APPEND BLOCK ELEM: ", len(repr))
-        repr.append(getRandomLayer())
-        print("NEW BLOCK ELEM: ", len(repr))
-    elif np.random.random() < removeProb and len(repr) > 2:
-        print("REMOVE BLOCK ELEM: ", len(repr))
-        random.shuffle(repr)
-        repr.pop()
-        print("NEW BLOCK ELEM: ", len(repr))
+        #Appending / removing blocks:
+        if np.random.random() < 0.5 or len(repr) <= 2 :
+            print("APPEND BLOCK ELEM: ", len(repr))
+            repr.append(getRandomLayer())
+            print("NEW BLOCK ELEM: ", len(repr))
+        else:
+            print("REMOVE BLOCK ELEM: ", len(repr))
+            random.shuffle(repr)
+            repr.pop()
+            print("NEW BLOCK ELEM: ", len(repr))
+
+    else:
+
+        #Mutating blocks itself:
+        for layerIndex in np.random.randint(0, len(repr), mutations):
+            if verbose:
+                repr[layerIndex] = mutate_layer(repr[layerIndex], verbose=True)
+            else:
+                repr[layerIndex] = mutate_layer(repr[layerIndex])
+
+        
 
 
     return containerIndividual(repr),
