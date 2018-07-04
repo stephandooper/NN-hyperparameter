@@ -8,12 +8,14 @@ from deap import creator
 from deap import tools
 
 import representations, fitness, mutations
+import sys
+from pprint import pprint
 
 
 #INITIAL_BLOCKS = 5 # Represents how many random layer blocks each NNet should start with
 INITIAL_BLOCKS = 5 # Random Exclusive represents how many random layer blocks each NNet should start with
 
-POPULATION = 100
+POPULATION = 10
 GENERATIONS = 10
 PROB_MUTATIONS = 0.23 # Probability of mutating in a new generation
 PROB_MATE = 0.4 # Probability of mating / crossover in a new generation
@@ -55,12 +57,10 @@ def getRandomLayer():
     networks = [
         representations.make_conv2d_pool_repr(),
         representations.make_conv2d_dropout_repr(),
-        # representations.make_flatten_repr(),
         representations.make_noise_repr(),
         representations.make_dropout_repr(),
-
     ]
-    probabilities = np.array([0.3, 0.3, 0.15, 0.15])
+    probabilities = np.array([0.5, 0.5, 0.1, 0.1])
     probabilities = probabilities / probabilities.sum()
     return np.random.choice(networks,p=probabilities)
 
@@ -105,7 +105,11 @@ toolbox.register("select", tools.selTournament, tournsize=3)
 
 def main():
     random.seed(1337)
+
     pop = toolbox.population(n=POPULATION)
+    pprint(pop)
+
+    sys.exit(1)
 
     # Evaluate the entire population
     fitnesses = list(map(toolbox.evaluate, pop))
