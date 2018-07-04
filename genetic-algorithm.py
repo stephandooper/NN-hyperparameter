@@ -13,11 +13,11 @@ import representations, fitness, mutations
 #INITIAL_BLOCKS = 5 # Represents how many random layer blocks each NNet should start with
 INITIAL_BLOCKS = 5 # Random Exclusive represents how many random layer blocks each NNet should start with
 
-POPULATION = 10
+POPULATION = 100
 GENERATIONS = 10
-PROB_MUTATIONS = 0.25 # Probability of mutating in a new generation
-PROB_MATE = 0.6 # Probability of mating / crossover in a new generation
-NUMBER_EPOCHS = 2 #Epochs when training the network
+PROB_MUTATIONS = 0.23 # Probability of mutating in a new generation
+PROB_MATE = 0.4 # Probability of mating / crossover in a new generation
+NUMBER_EPOCHS = 5 #Epochs when training the network
 
 #---------------------
 
@@ -55,7 +55,7 @@ def getRandomLayer():
     networks = [
         representations.make_conv2d_pool_repr(),
         representations.make_conv2d_dropout_repr(),
-        representations.make_batchnorm_repr(),
+        representations.make_flatten_repr(),
         representations.make_noise_repr(),
         representations.make_dropout_repr(),
 
@@ -74,8 +74,9 @@ def evaluateFunc(individual):
 def initRepeatRandom(container, func, n):
     """
     Extended toolbox.initRepeat() function to work with random initialization instead of fixed numbers.
+    Set this length to be minimal of 2, as we do two point crossover!!
     """
-    return container(func() for _ in range(np.random.randint(1,n)))
+    return container(func() for _ in range(np.random.randint(2,n)))
 
 # -------------- Init / Main stuff ----------------------
 
@@ -98,7 +99,7 @@ toolbox.register("mate", tools.cxTwoPoint)
 toolbox.register("mutate", mutations.mutate_network, verbose=True, mutations=2)
 toolbox.register("select", tools.selTournament, tournsize=3)
 #toolbox.register("select", tools.selBest)
-#deap.tools.selBest(individuals, k, fit_attr='fitness')¶
+#deap.tools.selBest(individuals, k, fit_attr='fitness')
 
 
 
@@ -131,6 +132,10 @@ def main():
     print("\nBad network (%dth):" % 4)
     print(hof[4])
     print("With a fitness of: ", hof[4].fitness)
+
+    print("\nBad network (%dth):" % 9)
+    print(hof[9])
+    print("With a fitness of: ", hof[9].fitness)
 
 
 

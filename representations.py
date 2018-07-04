@@ -21,6 +21,17 @@ def make_base_repr():
         'params': {},
     }
 
+def make_dense_repr():
+    layer = make_base_repr()
+    layer['type'] = 'dense'
+    layer['params']['units'] = 2**np.random.choice(range(3,7))
+    return layer
+
+
+def make_flatten_repr():
+    layer = make_base_repr()
+    layer['type'] = 'flatten'
+    return layer
 
 def make_batchnorm_repr():
     layer = make_base_repr()
@@ -81,6 +92,8 @@ REPR_MAKERS = {
     'dropout': make_dropout_repr,
     'noise': make_noise_repr,
     'pool': make_pool_repr,
+    'flatten': make_flatten_repr,
+    'dense': make_dense_repr,
 }
 
 MUTABLE_PARAMS = {
@@ -99,6 +112,8 @@ INSERTABLE = [
     'dropout',
     'noise',
     'pool',
+    'flatten',
+    'dense'
 ]
 
 REPR2LAYER = {
@@ -107,6 +122,8 @@ REPR2LAYER = {
     'dropout': Dropout,
     'noise': GaussianNoise,
     'pool': MaxPooling2D,
+    'flatten': Flatten,
+    'dense': Dense,
 
 
 }
