@@ -23,23 +23,22 @@ x_test = x_test[:50]
 y_test = y_test[:50]
 
 
-
 def evaluate_nn(reprs, epochs=5):
     fitness = 0
-    try: 
+    try:
         model = representations.reprs2nn(reprs)
         model.compile('adam', 'categorical_crossentropy', metrics=['accuracy'])
-
 
         result = model.fit(x_train, y_train, batch_size=32, epochs=2,
                            validation_data=(x_test, y_test), verbose=0)
         fitness = max(result.history['val_acc'])
         complexity = model.count_params()
         fitness = fitness - 0.02 * np.log(complexity) # Change this a
-        if fitness < 0: 
+        if fitness < 0:
             fitness = 0
-    except:
+    except Exception as e:
         print("Error evaluating..")
+        print(e)
 
     return fitness
 
