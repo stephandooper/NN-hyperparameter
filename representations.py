@@ -33,6 +33,7 @@ def make_flatten_repr():
     layer['type'] = 'flatten'
     return layer
 
+
 def make_batchnorm_repr():
     layer = make_base_repr()
     layer['type'] = 'batchnorm'
@@ -66,7 +67,7 @@ def make_noise_repr():
 def make_pool_repr():
     layer = make_base_repr()
     layer['type'] = 'pool'
-    layer['params']['pool_size'] = np.random.randint(1,5)
+    layer['params']['pool_size'] = 2
     return layer
 
 
@@ -77,12 +78,14 @@ def make_conv2d_dropout_repr():
                                         decimals=2)
     return layer
 
+
 def make_conv2d_pool_repr():
     layer = make_conv2d_repr()
     layer['type'] = 'conv2dpool'
-    layer['params']['pool_size'] = np.random.randint(1,5) # random between 1 - 4 inclusive 
+    layer['params']['pool_size'] = 2
 
     return layer
+
 
 REPR_MAKERS = {
     'batchnorm': make_batchnorm_repr,
@@ -113,7 +116,7 @@ INSERTABLE = [
     'noise',
     'pool',
     'flatten',
-    'dense'
+    'dense',
 ]
 
 REPR2LAYER = {
@@ -124,8 +127,6 @@ REPR2LAYER = {
     'pool': MaxPooling2D,
     'flatten': Flatten,
     'dense': Dense,
-
-
 }
 
 
@@ -150,7 +151,6 @@ def reprs2nn(reprs):
     return Model(inputs, outputs)
 
 
-
 def default_init_nn_repr():
     layers = [
         make_conv2d_repr(),
@@ -158,4 +158,14 @@ def default_init_nn_repr():
     ]
     return layers
 
-#print(reprs2nn(default_init_nn_repr()).summary())
+
+def check_validity(reprs):
+    start_size = 28
+    for layer in reprs:
+        t = layer['type']
+        p = layer['params']
+        if t.startswith('conv2d'):
+            start_size -= p['kernel_size'] - 1
+            if 'pool' in t:
+                start_size /= p['pool_size']
+    return start_size >= 1
