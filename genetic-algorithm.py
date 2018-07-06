@@ -69,6 +69,7 @@ Evaluation function (should return the fitness)
 def evaluateFunc(individual):
     return fitness.evaluate_nn(individual, NUMBER_EPOCHS), #<--- IMPORTANT: add the comma ','; as it needs to return a tuple
 
+
 def initRepeatRandom(container, func, n):
     """
     Extended toolbox.initRepeat() function to work with random initialization instead of fixed numbers.

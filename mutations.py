@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from representations import INSERTABLE, MUTABLE_PARAMS, default_init_nn_repr, REPR_MAKERS
+from representations import INSERTABLE, MUTABLE_PARAMS, default_init_nn_repr, REPR_MAKERS, check_validity
 import representations
 import numpy as np
 import random
@@ -38,7 +38,7 @@ def mutate_layer(layer, verbose=False):
         if layer['type'] == elem:
             layer = REPR_MAKERS[elem]()
             if verbose:
-                print('MUTATED LAYER %s' % layer['type'])
+                print('mutate layer {}'.format(layer['type']))
     return layer
 
 
@@ -75,5 +75,7 @@ def mutate_network(reprRaw, mutations=2, verbose=False, appendRemoveProb=0.6):
                 repr[layerIndex] = mutate_layer(repr[layerIndex], verbose=True)
             else:
                 repr[layerIndex] = mutate_layer(repr[layerIndex])
+
+    print('Network valid: {}'.format(check_validity(repr)))
 
     return containerIndividual(repr),
