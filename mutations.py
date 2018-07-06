@@ -1,46 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-
-
-'''
-MAKE SURE TO RETURN TYPE 'Individual' (toolbox.individual())
-
-It is safe to mutate droprates/pooling stuff, etc. But inserting/removing seems impossible?
-(Type 'Individual' has no function 'remove'/'append')
-'''
-
-
-
-
 from representations import INSERTABLE, MUTABLE_PARAMS, default_init_nn_repr, REPR_MAKERS
 import representations
 import numpy as np
 import random
 
-FILTER_MUTATIONS = np.array([16, 32, 64])
-
 containerIndividual = None
 getRandomLayer = None
-
-
-
-def mutate_append_remove(reprs, prob_remove=1):
-    #@Deprecated
-    '''
-    Randomly appends or removes a layer. 
-        prob_remove: probability that it removes a layer
-    Returns: mutated representation
-    '''
-    if np.random.random() < prob_remove:
-        if len(reprs) > 0:
-            reprs.remove(np.random.choice(reprs))
-    else:
-        reprs = insert_layer(reprs)
-    return reprs
-
-# -------------------------------------------------------
-
 
 
 def setIndividual(container):
@@ -52,6 +18,7 @@ def setIndividual(container):
     '''
     global containerIndividual
     containerIndividual = container
+
 
 def setInitialization(func):
     global getRandomLayer
@@ -65,7 +32,7 @@ def mutate_layer(layer, verbose=False):
 
     Appended [0] because you need to access the container inside the
     Individual({type: conv2dpool, params})
-    class.    
+    class.
     '''
     for elem in REPR_MAKERS:
         if layer['type'] == elem:
@@ -75,17 +42,11 @@ def mutate_layer(layer, verbose=False):
     return layer
 
 
-def removeBlock(repr):
-    #@Deprecated
-    random.shuffle(repr)
-    return repr.pop()
-
-
-def mutate_network(reprRaw, mutations=2, verbose=False, appendRemoveProb = 0.6):
+def mutate_network(reprRaw, mutations=2, verbose=False, appendRemoveProb=0.6):
     '''
     Mutates a whole representation network.
     Arguments:
-        appendRemoveProb: Probability that a block is being appended/removed. 
+        appendRemoveProb: Probability that a block is being appended/removed.
             The inverse is the probability of mutating a block itself (so not changing the structure)
     '''
     repr = reprRaw.tolist()
@@ -93,14 +54,10 @@ def mutate_network(reprRaw, mutations=2, verbose=False, appendRemoveProb = 0.6):
     if mutations > len(repr):
         mutations = len(repr) # prevents setting higher count of mutations than length of representation
 
-
     if verbose:
         print("MUTATING %d BLOCKS OF NETWORK" % mutations)
-    
-    
-    
-    if (np.random.random() < appendRemoveProb): #if random evaluates to do an append/remove
 
+    if (np.random.random() < appendRemoveProb): #if random evaluates to do an append/remove
         #Appending / removing blocks:
         if np.random.random() < 0.5 or len(repr) <= 2 :
             print("APPEND BLOCK ELEM: ", len(repr))
@@ -111,17 +68,12 @@ def mutate_network(reprRaw, mutations=2, verbose=False, appendRemoveProb = 0.6):
             random.shuffle(repr)
             repr.pop()
             print("NEW BLOCK ELEM: ", len(repr))
-
     else:
-
         #Mutating blocks itself:
         for layerIndex in np.random.randint(0, len(repr), mutations):
             if verbose:
                 repr[layerIndex] = mutate_layer(repr[layerIndex], verbose=True)
             else:
                 repr[layerIndex] = mutate_layer(repr[layerIndex])
-
-        
-
 
     return containerIndividual(repr),
