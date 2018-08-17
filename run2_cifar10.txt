@@ -1,0 +1,1091 @@
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.3}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.3}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.10180000004768372
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6254000007629394
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}}],
+           dtype=object)
+0.10000000003576279
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.3}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.10039999995231629
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.570699999332428
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.7152999993324279
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2d', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.09999999998807907
+Individual([{'type': 'conv2dpool', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.1
+Individual([{'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}}],
+           dtype=object)
+0.10000000003576279
+gen	nevals	avg    	std     	min	max   
+0  	0     	0.26136	0.248159	0.1	0.7153
+Individual([{'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.5496999996185302
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.3}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6256999994277954
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}}],
+           dtype=object)
+0.10010000005960465
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.1
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.09999999998807907
+1  	6     	0.37333	0.276538	0.1	0.7153
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000004768371
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.3}}],
+           dtype=object)
+0.649099999332428
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}}],
+           dtype=object)
+0.09999999992847443
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.7004999998092651
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.664300000667572
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.1
+Individual([{'type': 'conv2d', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.3}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.10000000002384186
+2  	8     	0.32411	0.274653	0.1	0.7005
+Individual([{'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.6554000000953675
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.6448999992370605
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2d', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.09999999991655349
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 1 for 'conv2d_86/convolution' (op: 'Conv2D') with input shapes: [?,1,1,16], [3,3,16,256].
+0
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.6679
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000004768371
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999992847443
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6289000000953674
+3  	8     	0.36632	0.287542	0  	0.6679
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999998807907
+Individual([{'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.1936000000476837
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.0357628621983439}}],
+           dtype=object)
+0.6367999996185303
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.6591000000953674
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.7096000003814698
+4  	5     	0.50192	0.244734	0.1	0.7096
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.5168
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.0357628621983439}}],
+           dtype=object)
+0.674799999332428
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.668400000667572
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.6912000007629394
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000003576279
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.7016999999046326
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.6910999998092652
+5  	7     	0.60806	0.177094	0.1	0.7096
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.5481969026804739}}],
+           dtype=object)
+0.6901999994277954
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 2 for 'conv2d_142/convolution' (op: 'Conv2D') with input shapes: [?,2,2,16], [3,3,16,16].
+0
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.7014999997138978
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.11910000002384186
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.7086000001907349
+6  	7     	0.44806	0.302318	0  	0.7086
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.5481969026804739}}],
+           dtype=object)
+0.6839999999046326
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.5481969026804739}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.3183952342741502}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.6629999992370605
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.7047999997138977
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.5}}],
+           dtype=object)
+0.7024999992370605
+Individual([{'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999998807907
+Individual([{'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.09999999994039535
+Individual([{'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000002384186
+7  	9     	0.39454	0.294733	0.1	0.7048
+Individual([{'type': 'conv2dpool', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.10169999990463256
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10039999995231629
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.6982000001907349
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.10000000004768371
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.7007999997138977
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.12720000019073485
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.5}}],
+           dtype=object)
+0.6732999994277954
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.7035000005722046
+8  	9     	0.40099	0.295341	0.1	0.7048
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.688200000667572
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.7352999992370606
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.6015999996185303
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6592000002861023
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.5}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 2 for 'conv2d_240/convolution' (op: 'Conv2D') with input shapes: [?,2,2,64], [3,3,64,64].
+0
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.658199999332428
+9  	6     	0.61223	0.206929	0  	0.7353
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.7454000001907348
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.7052000001907348
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6814999996185302
+Individual([{'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999994039535
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.735199999332428
+Individual([{'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.6791999995231628
+10 	6     	0.64178	0.182714	0.1	0.7454
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.7350999997138977
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.7437000005722046
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.743199999332428
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.709900000667572
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.6807000001907348
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.7514999998092652
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.7469000005722046
+11 	7     	0.72047	0.0287254	0.6792	0.7515
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.7497000007629394
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.5038783266319635}}],
+           dtype=object)
+0.7214999992370605
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.736199999332428
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.730100000667572
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999998807907
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.6895249132942685}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.7554999998092652
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.7459
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.7145000007629394
+12 	8     	0.6744 	0.19186  	0.1   	0.7555
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'noise', 'params': {'stddev': 0.6895249132942685}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999998807907
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.5841999997138977
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.7452999997138977
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.6253999996185303
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.6895249132942685}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 2 for 'conv2d_333/convolution' (op: 'Conv2D') with input shapes: [?,2,2,64], [3,3,64,32].
+0
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.24267311797887892}}],
+           dtype=object)
+0.10000000004768371
+Individual([{'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.7614000007629395
+Individual([{'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999998807907
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2d', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 2 for 'conv2d_347/convolution' (op: 'Conv2D') with input shapes: [?,2,2,64], [3,3,64,256].
+0
+13 	9     	0.37622	0.322268 	0     	0.7614
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.7655
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6956999994277954
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.42939999995231626
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.1121
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.10206164271301466}}],
+           dtype=object)
+0.09999999991655349
+Individual([{'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.5}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 2 for 'conv2d_368/convolution' (op: 'Conv2D') with input shapes: [?,2,2,64], [3,3,64,128].
+0
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.24267311797887892}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000005960465
+14 	8     	0.36734	0.299023 	0     	0.7655
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 1 for 'conv2d_381/convolution' (op: 'Conv2D') with input shapes: [?,1,1,16], [3,3,16,16].
+0
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6927999997138977
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.5}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999991655349
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999994039535
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+0.734799999332428
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.6119999996185302
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000004768371
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.7016999994277954
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.14560000007152557
+15 	10    	0.32869	0.29456  	0     	0.7348
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 2 for 'conv2d_418/convolution' (op: 'Conv2D') with input shapes: [?,2,2,128], [3,3,128,128].
+0
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 1 for 'conv2d_423/convolution' (op: 'Conv2D') with input shapes: [?,1,1,16], [3,3,16,128].
+0
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000004768371
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.3}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6739999992370606
+16 	4     	0.41942	0.30479  	0     	0.7017
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6865999998092651
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.10000000004768371
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6154999998092652
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 2 for 'conv2d_448/convolution' (op: 'Conv2D') with input shapes: [?,2,2,128], [3,3,128,16].
+0
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999994039535
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.10000000004768371
+17 	6     	0.43911	0.299465 	0     	0.7017
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6541999994277954
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10010000004768371
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 1 for 'conv2d_471/convolution' (op: 'Conv2D') with input shapes: [?,1,1,64], [3,3,64,128].
+0
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 1 for 'conv2d_476/convolution' (op: 'Conv2D') with input shapes: [?,1,1,128], [3,3,128,128].
+0
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 2 for 'conv2d_484/convolution' (op: 'Conv2D') with input shapes: [?,2,2,128], [3,3,128,16].
+0
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.12880000001192093
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000004768371
+18 	8     	0.24625	0.286284 	0     	0.6928
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.689800000667572
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10699999997615814
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.10000000005960465
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.5}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6380000002861023
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.1
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.10000000004768371
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+0.6706000005722046
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.6724
+19 	8     	0.44572	0.281224 	0.1   	0.6928
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999994039535
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2d', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+0.6430999995231629
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.11950000003576279
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999998807907
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.09999999994039535
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2d', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+Error evaluating...
+Negative dimension size caused by subtracting 3 from 1 for 'conv2d_552/convolution' (op: 'Conv2D') with input shapes: [?,1,1,64], [3,3,64,256].
+0
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+0.6052000001907348
+Individual([{'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}},
+            {'type': 'conv2dpool', 'params': {'filters': 32, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}}],
+           dtype=object)
+0.7064999992370605
+20 	8     	0.37599	0.294877 	0     	0.7065
+
+----------------------------------
+gen	nevals	avg    	std      	min   	max   
+0  	0     	0.26136	0.248159 	0.1   	0.7153
+1  	6     	0.37333	0.276538 	0.1   	0.7153
+2  	8     	0.32411	0.274653 	0.1   	0.7005
+3  	8     	0.36632	0.287542 	0     	0.6679
+4  	5     	0.50192	0.244734 	0.1   	0.7096
+5  	7     	0.60806	0.177094 	0.1   	0.7096
+6  	7     	0.44806	0.302318 	0     	0.7086
+7  	9     	0.39454	0.294733 	0.1   	0.7048
+8  	9     	0.40099	0.295341 	0.1   	0.7048
+9  	6     	0.61223	0.206929 	0     	0.7353
+10 	6     	0.64178	0.182714 	0.1   	0.7454
+11 	7     	0.72047	0.0287254	0.6792	0.7515
+12 	8     	0.6744 	0.19186  	0.1   	0.7555
+13 	9     	0.37622	0.322268 	0     	0.7614
+14 	8     	0.36734	0.299023 	0     	0.7655
+15 	10    	0.32869	0.29456  	0     	0.7348
+16 	4     	0.41942	0.30479  	0     	0.7017
+17 	6     	0.43911	0.299465 	0     	0.7017
+18 	8     	0.24625	0.286284 	0     	0.6928
+19 	8     	0.44572	0.281224 	0.1   	0.6928
+20 	8     	0.37599	0.294877 	0     	0.7065
+
+----------------------------------
+
+Hall of Fame:
+
+Individual([{'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+Fitness: (0.7655,)
+Individual([{'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+Fitness: (0.7614000007629395,)
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.6895249132942685}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+Fitness: (0.7554999998092652,)
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+Fitness: (0.7514999998092652,)
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2ddropout', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.1}}],
+           dtype=object)
+Fitness: (0.7497000007629394,)
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+Fitness: (0.7454000001907348,)
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}}],
+           dtype=object)
+Fitness: (0.7352999992370606,)
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}},
+            {'type': 'noise', 'params': {'stddev': 0.5038783266319635}}],
+           dtype=object)
+Fitness: (0.7214999992370605,)
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 256, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.4}}],
+           dtype=object)
+Fitness: (0.7152999993324279,)
+Individual([{'type': 'conv2dpool', 'params': {'filters': 16, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2dpool', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'pool_size': 2}},
+            {'type': 'conv2ddropout', 'params': {'filters': 128, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu', 'rate': 0.2}},
+            {'type': 'noise', 'params': {'stddev': 0.9950754789501867}},
+            {'type': 'conv2d', 'params': {'filters': 64, 'kernel_size': 3, 'kernel_initializer': 'glorot_normal', 'activation': 'relu'}}],
+           dtype=object)
+Fitness: (0.7145000007629394,)

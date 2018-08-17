@@ -1,55 +1,55 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import representations
-import numpy as np
-from keras.datasets import mnist
+from keras.datasets import cifar10, fashion_mnist
+from pprint import pprint
 import keras
+import numpy as np
+import representations
 
-(x_train, y_train), (x_test, y_test) = mnist.load_data()
-x_train = np.expand_dims(x_train, axis=3) #add the 'channel' dimension, in order to use Conv2D!
-x_test = np.expand_dims(x_test, axis=3)
+(fashion_x_train, fashion_y_train), (fashion_x_test, fashion_y_test) = fashion_mnist.load_data()
+fashion_x_train = np.expand_dims(fashion_x_train, -1)
+fashion_x_test = np.expand_dims(fashion_x_test, -1)
 
-#to categorical, otherwise last dense layer expects 1 input only:
+(cifar10_x_train, cifar10_y_train), (cifar10_x_test, cifar10_y_test) = cifar10.load_data()
+
 num_classes=10
-y_train = keras.utils.to_categorical(y_train, num_classes)
-y_test = keras.utils.to_categorical(y_test, num_classes)
+fashion_y_train = keras.utils.to_categorical(fashion_y_train, num_classes)
+fashion_y_test = keras.utils.to_categorical(fashion_y_test, num_classes)
+cifar10_y_train = keras.utils.to_categorical(cifar10_y_train, num_classes)
+cifar10_y_test = keras.utils.to_categorical(cifar10_y_test, num_classes)
 
 
-#subset of data:
-x_train = x_train[:200]
-y_train = y_train[:200]
-x_test = x_test[:50]
-y_test = y_test[:50]
-
-
-def evaluate_nn(reprs, epochs=5):
+def evaluate_nn(reprs, epochs=20, dataset='fashion', batch_size=512,
+                verbose=False):
+    assert dataset in ['fashion', 'cifar10']
     fitness = 0
+    if dataset == 'fashion':
+        x_train = fashion_x_train
+        y_train = fashion_y_train
+        x_test = fashion_x_test
+        y_test = fashion_y_test
+        shape = (28, 28, 1)
+    elif dataset == 'cifar10':
+        x_train = cifar10_x_train
+        y_train = cifar10_y_train
+        x_test = cifar10_x_test
+        y_test = cifar10_y_test
+        shape = (32, 32, 3)
+    pprint(reprs)
     try:
-        model = representations.reprs2nn(reprs)
+        model = representations.reprs2nn(reprs, shape)
+        model = keras.utils.multi_gpu_model(model)
         model.compile('adam', 'categorical_crossentropy', metrics=['accuracy'])
 
-        result = model.fit(x_train, y_train, batch_size=32, epochs=2,
-                           validation_data=(x_test, y_test), verbose=0)
+        result = model.fit(x_train, y_train, batch_size=batch_size,
+                           epochs=epochs, validation_data=(x_test, y_test),
+                           verbose=verbose)
         fitness = max(result.history['val_acc'])
-        complexity = model.count_params()
-        fitness = fitness - 0.02 * np.log(complexity) # Change this a
-        if fitness < 0:
-            fitness = 0
-    except Exception as e:
-        print("Error evaluating..")
-        print(e)
+    except Exception as exc:
+        print('Error evaluating...')
+        print(exc)
+        fitness = 0
 
+    print(fitness)
     return fitness
-
-
-def evaluate_nn_test(reprs):
-
-    model = representations.reprs2nn(reprs)
-    print(model.summary())
-
-    model.compile('adam', 'categorical_crossentropy', metrics=['accuracy'])
-
-    result = model.fit(x_train, y_train, batch_size=32, epochs=3,
-                       validation_data=(x_test, y_test), verbose=1)
-    return max(result.history['val_acc'])

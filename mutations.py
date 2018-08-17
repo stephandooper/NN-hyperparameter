@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from representations import INSERTABLE, MUTABLE_PARAMS, default_init_nn_repr, REPR_MAKERS, check_validity
+from representations import (INSERTABLE,
+                             MUTABLE_PARAMS,
+                             REPR_MAKERS,
+                             check_validity)
 import representations
 import numpy as np
 import random
@@ -42,40 +45,43 @@ def mutate_layer(layer, verbose=False):
     return layer
 
 
-def mutate_network(reprRaw, mutations=2, verbose=False, appendRemoveProb=0.6):
+def mutate_network(reprRaw, mutations=1, verbose=False, appendRemoveProb=0.6):
     '''
     Mutates a whole representation network.
     Arguments:
         appendRemoveProb: Probability that a block is being appended/removed.
-            The inverse is the probability of mutating a block itself (so not changing the structure)
+            The inverse is the probability of mutating a block itself (so not
+            changing the structure)
     '''
     repr = reprRaw.tolist()
 
     if mutations > len(repr):
-        mutations = len(repr) # prevents setting higher count of mutations than length of representation
+        mutations = len(repr)
 
     if verbose:
         print("MUTATING %d BLOCKS OF NETWORK" % mutations)
 
-    if (np.random.random() < appendRemoveProb): #if random evaluates to do an append/remove
-        #Appending / removing blocks:
-        if np.random.random() < 0.5 or len(repr) <= 2 :
-            print("APPEND BLOCK ELEM: ", len(repr))
+    if np.random.random() < appendRemoveProb:
+        if np.random.random() < 0.5 or len(repr) <= 2:
             repr.append(getRandomLayer())
-            print("NEW BLOCK ELEM: ", len(repr))
+            if verbose:
+                print("APPEND BLOCK ELEM: ", len(repr))
+                print("NEW BLOCK ELEM: ", len(repr))
         else:
-            print("REMOVE BLOCK ELEM: ", len(repr))
             random.shuffle(repr)
             repr.pop()
-            print("NEW BLOCK ELEM: ", len(repr))
-    else:
-        #Mutating blocks itself:
-        for layerIndex in np.random.randint(0, len(repr), mutations):
             if verbose:
-                repr[layerIndex] = mutate_layer(repr[layerIndex], verbose=True)
-            else:
-                repr[layerIndex] = mutate_layer(repr[layerIndex])
+                print("REMOVE BLOCK ELEM: ", len(repr))
+                print("NEW BLOCK ELEM: ", len(repr))
+    else:
+        for layerIndex in np.random.randint(0, len(repr), mutations):
+            repr[layerIndex] = mutate_layer(repr[layerIndex], verbose=verbose)
 
-    print('Network valid: {}'.format(check_validity(repr)))
+    while not check_validity(repr):
+        random.shuffle(repr)
+        repr.pop()
+
+    if verbose:
+        print('Network valid: {}'.format(check_validity(repr)))
 
     return containerIndividual(repr),

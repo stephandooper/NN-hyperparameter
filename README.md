@@ -1,9 +1,3 @@
-# NN-hyperparameter
-Natural computing assignment on tuning hyperparameters for neural networks
-
-# Overblad link
-https://www.overleaf.com/16256077hgdcsgzbfcsp
-
-# Tutorial for genetic algorithm
-
-https://deap.readthedocs.io/en/master/examples/ga_onemax.html
+To run the algorithm, call `python genetic-algorithm.py`. To change
+probabilities for mutation, crossover, or change the dataset used, alter the
+global variables at the top of the file.
